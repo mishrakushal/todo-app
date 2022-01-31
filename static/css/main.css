@@ -1,0 +1,128 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', 'Montserrat', sans-serif;
+	background: rgb(45,38,153);
+	background: linear-gradient(167deg, rgba(45,38,153,1) 7%, rgba(105,105,182,1) 44%, rgba(92,214,238,1) 100%);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h2 {
+	padding-top: 2em;
+	padding-bottom: 1.5em;
+	background: -webkit-linear-gradient(167deg, rgba(45,38,153,1) 7%, rgba(105,105,182,1) 44%, rgba(32,123,140,1) 100%);
+	background-clip: border-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+h3 {
+	/* padding-top: 2em;
+	padding-bottom: 1.5em; */
+	background: -webkit-linear-gradient(167deg, rgba(45,38,153,1) 7%, rgba(105,105,182,1) 44%, rgba(32,123,140,1) 100%);
+	background-clip: border-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.container {
+	padding: 0 5em 0 5em;
+	background-color: #FFFFFF;
+	border-radius: 2.1em;
+}
+
+.btn {
+	color: #FFFFFF;
+	background-color: #53a7c5;
+	
+	border: none;
+}
+
+.btn:hover {
+	background-color: #3f37c9;
+
+}
+
+.btn:active {
+	border: none;
+}
+
+a {
+	color: #FFFFFF;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FFF;	
+}
+
+.modifyButtons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+}
+
+.modify {
+	border-radius: 0.1em;
+	/* background-color: #59c4da; */
+	border: none;
+	padding: 0.1em;
+	width: 5em;
+	/* width: auto; */
+}
+
+.input {
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+.inputUpdate {
+	padding-top: 1.5em;
+	padding-bottom: 4em;
+}
+
+.headers {
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+
+.taskBox, .headerName {
+	margin-bottom: 0.5em;
+	border-bottom: #6c757d solid 1px;
+	padding-bottom: 0.5em;
+}
+
+.col-8 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+::placeholder {
+	font-family: 'Roboto';
+	color: rgb(115, 115, 115);
+}
+
+.submitTask {
+	display: flex;
+	flex-direction: row;
+}
+
+.form-control:focus, .btn:focus {
+	outline: #FFF;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.updateTitle {
+	padding-top: 2em;
+	padding-bottom: 0.5em;
+	background: -webkit-linear-gradient(167deg, rgba(45,38,153,1) 7%, rgba(105,105,182,1) 44%, rgba(32,123,140,1) 100%);
+	background-clip: border-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

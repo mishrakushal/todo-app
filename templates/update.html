@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block head %}
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock %}
+
+{% block title %}Update Task{% endblock %}
+
+{% block body %}
+	<center>
+		<div class="container">
+			<h2 class="updateTitle">Update Task</h2>
+
+			<div class="inputUpdate">
+				<div class="form-inline">
+					<form action="/update/{{task.id}}" method="POST">
+						<input type="text" name="content" id="content" value="{{task.content}}" class="form-control width100"">
+						<button type="submit" class="btn btn-primary">Update</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</center>
+{% endblock %}
